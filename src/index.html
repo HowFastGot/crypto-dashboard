@@ -1,0 +1,133 @@
+<html lang="en">
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+<body>
+     <main class="page">
+          <div class="page__container _container">
+               <aside class="page__side-bar side-bar">
+                    <div class="side-bar__top">
+                         <a href="http://localhost:3000" class="side-bar__link-to-main-page">
+                              <img src="./img/icons/leftBar/top-icon.svg" alt="Icon of main link page">
+                         </a>
+                    </div>
+                    <ul class="side-bar__content-menu side-menu">
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Home-active.svg" alt="House icon">
+                              </a>
+                         </li>
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Activity.svg" alt="Message icon">
+                              </a>
+                         </li>
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Work3.svg" alt="Work icon">
+                              </a>
+                         </li>
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Heart.svg" alt="Heart icon">
+                              </a>
+                         </li>
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Bag5.svg" alt="Bag icon">
+                              </a>
+                         </li>
+                         <li class="side-menu__item">
+                              <a href="#">
+                                   <img src="./img/icons/leftBar/Time Square.svg" alt="Time icon">
+                              </a>
+                         </li>
+                    </ul>
+                    <div class="side-bar__settings">
+                         <a href="#">
+                              <img src="./img/icons/leftBar/Settingsett.svg" alt="Setting icon">
+                         </a>
+                    </div>
+               </aside>
+               <div class="page__main-content main-content">
+                    <section class="main-content__input-block">
+                         <input class="main-content__input" type="text" placeholder="Search">
+                    </section>
+                    <section class="main-content__discover-block discover">
+                         <p>
+                              Discover, collect, sell
+                              and create your own NFTs
+                         </p>
+                         <span></span>
+                         <button class="discover__btn discover__btn_active">Discover Now</button>
+                         <button class="discover__btn">Create Your Own</button>
+                    </section>
+                    <section class="main-content__tranding-nft nftS-tranding">
+                         <div class="nftS-tranding__row-head">
+                              <h4 class="nftS-tranding__title title-black">Trending NFTs</h4>
+                              <a href="#" class="nftS-tranding__view-all view-all">View all</a>
+                         </div>
+                         <ul class="nftS-tranding__paginations-list">
+                              <li class="nftS-tranding__item nftS-tranding__item_1">Trending</li>
+                              <li class="nftS-tranding__item nftS-tranding__item_2">Art</li>
+                              <li class="nftS-tranding__item nftS-tranding__item_3">Game</li>
+                              <li class="nftS-tranding__item nftS-tranding__item_4">Fashion</li>
+                              <li class="nftS-tranding__item nftS-tranding__item_5">Music</li>
+                              <li class="nftS-tranding__item nftS-tranding__item_6">Photography</li>
+                         </ul>
+                         <div class="nftS-tranding__carts-row carts-block">
+                              <div class="carts-block__cart carts-block__cart_1">
+                                   <div class="carts-block__top-part carts-block__top-part_1">
+                                        <span class="carts-block__cripto-amount">4.5 <i>ETH</i></span>
+                                   </div>
+                                   <div class="carts-block__bottom-floor">
+                                        <p class="carts-block__person-name">Luciana Hakis</p>
+                                        <p class="carts-block__person-subname">Rohan Vincent</p>
+                                        <span class="carts-block__personal-img carts-block__personal-img_1"></span>
+                                   </div>
+                              </div>
+                              <div class="carts-block__cart carts-block__cart_2">
+                                   <div class="carts-block__top-part carts-block__top-part_2">
+                                        <span class="carts-block__cripto-amount">4.5 <i>ETH</i></span>
+                                   </div>
+                                   <div class="carts-block__bottom-floor">
+                                        <p class="carts-block__person-name">Sunny Evana</p>
+                                        <p class="carts-block__person-subname">Mira Russell</p>
+                                        <span class="carts-block__personal-img carts-block__personal-img_2"></span>
+                                   </div>
+                              </div>
+                              <div class="carts-block__cart carts-block__cart_3">
+                                   <div class="carts-block__top-part carts-block__top-part_3">
+                                        <span class="carts-block__cripto-amount">4.5 <i>ETH</i></span>
+                                   </div>
+                                   <div class="carts-block__bottom-floor">
+                                        <p class="carts-block__person-name">Rena Hussy</p>
+                                        <p class="carts-block__person-subname">Caprice Armstrong</p>
+                                        <span class="carts-block__personal-img carts-block__personal-img_3"></span>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="main-content__top-creators top-creators">
+                         @@include('html/creators.html', {})
+                    </section>
+               </div>
+               <aside class="page__side-bar-right right-bar">
+                    <section class="right-bar__profile-settings profile-settings">
+                         @@include('html/profile-setttings.html', {})
+                    </section>
+                    <section class="right-bar__balance balance">
+                         @@include('html/balance.html', {})
+                    </section>
+                    <section class="right-bar__recent-users recent-users">
+                         @@include('html/recent-users.html', {})
+                    </section>
+               </aside>
+          </div>
+          <br><br>
+     </main>
+     <script src="js/app.min.js"></script>
+</body>
+
+</html>`1

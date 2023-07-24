@@ -1,0 +1,99 @@
+.profile-settings {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     &__change-light {
+          padding: 4px;
+          background-color: #fff;
+          border-radius: 16px;
+     }
+
+     &__list-triggers {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 5px;
+     }
+
+     &__trigger {
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+
+          &_sun {
+               background: url("../img/icons/Header/Sun.svg") no-repeat center/cover;
+          }
+
+          &_moon {
+               background: url("../img/icons/Header/Moon.svg") no-repeat center/cover;
+          }
+
+          @media (min-width: 750px) {
+               &:hover {
+                    transform: scale(1.09);
+               }
+          }
+
+          &_active {
+               border: 1px solid #3162FF;
+               border-radius: 13px;
+               background-color: #EEF1FF;
+               cursor: text;
+
+               @media (min-width: 750px) {
+                    &:hover {
+                         transform: scale(1);
+                    }
+               }
+          }
+     }
+
+     &__alarm-icon {
+          width: 52px;
+          height: 52px;
+          background: url("../img/icons/Header/Notification\ 1.svg") no-repeat center/40%;
+          background-color: #FFFFFF;
+          border-radius: 16px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+
+          @media (min-width: 750px) {
+               &:hover {
+                    transform: scale(1.09);
+               }
+          }
+     }
+
+     &__profile-info {}
+}
+
+.profile-info {
+     display: flex;
+     gap: 12px;
+
+     &__text-block {}
+
+     &__name {
+          padding: 10px 0;
+          font-size: 16px;
+          line-height: calc(16 /24) + em;
+          font-weight: 600;
+          color: #272B36;
+     }
+
+     &__role {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: calc(12 /20);
+          color: #989BA5;
+
+          span {
+               color: #FFAD31;
+          }
+     }
+
+     &__photo {}
+}

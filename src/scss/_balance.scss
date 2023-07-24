@@ -1,0 +1,27 @@
+.balance {
+     margin: 40px 0;
+     padding: 32px 24px 15px;
+     background-color: #fff;
+     box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+     border-radius: 20px;
+     text-align: center;
+
+     &__wrapper {}
+
+     &__title {
+          font-size: 16px;
+          line-height: calc(24/16) + em;
+          color: #8E8C99;
+
+     }
+
+     &__amount {
+          margin: 8px 0 15px;
+          font-size: 28px;
+          line-height: calc(40 / 28) + em;
+          font-weight: 700;
+          color: #070721;
+     }
+
+     &__image-block {}
+}

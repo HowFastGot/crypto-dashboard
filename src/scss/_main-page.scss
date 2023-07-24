@@ -1,0 +1,425 @@
+@import "Variables";
+
+//<>====================================================================================================================================
+.side-bar {
+     display: inline-flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 84px;
+     height: 100%;
+     background-color: #fff;
+     border-radius: 20px;
+     box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+
+     &__top {
+          padding: 20px 0px 20px 0px;
+     }
+
+     &__link-to-main-page {}
+
+     &__content-menu {
+          height: 275px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          img:not(:first-child) {
+               filter: grayscale(100%);
+          }
+     }
+
+     &__settings {
+          padding: 20px 0px 30px 0px;
+     }
+}
+
+.side-menu {
+
+     &__item {}
+}
+
+//<main-content>====================================================================================================================================
+.main-content {
+     &__input-block {
+          position: relative;
+          margin: 0 0 35px 0px;
+
+          &::before {
+               content: "";
+               display: inline-block;
+               position: absolute;
+               top: 50%;
+               left: 20px;
+               transform: translateY(-50%);
+               width: 25px;
+               height: 25px;
+               background: url("../img/icons/Header/Search.svg") center/cover no-repeat;
+          }
+     }
+
+     &__input {
+          padding-left: 60px;
+          height: 52px;
+          width: 288px;
+          box-sizing: border-box;
+          box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+          border-radius: 20px;
+     }
+
+     &__discover-block {
+          position: relative;
+
+          p {
+               padding: 48px 10px 40px 0px;
+               white-space: pre-line;
+               font-weight: 700;
+               font-size: 28px;
+               line-height: 1.42em;
+          }
+
+          span {
+               display: inline-block;
+               position: absolute;
+               right: 0;
+               top: 0;
+               transform: translateX(-50%);
+               width: 232px;
+               height: 310px;
+               background: url("../img/color-smash.png") no-repeat center/cover;
+          }
+     }
+
+     &__tranding-nft {}
+}
+
+//==================================================================================
+
+.discover {
+     position: relative;
+     padding: 0 0 60px 60px;
+     overflow: hidden;
+     background: linear-gradient(95.63deg, #D2ECFF 0%, #D6ECFF 9.37%, #F5E8FF 100%);
+     box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+     border-radius: 24px;
+
+     &::before,
+     &::after {
+          z-index: 0;
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 896px;
+          height: 300px;
+          background: url("../img/main-page/discover-block/Vector 15.png") no-repeat center/cover;
+     }
+
+     &::after {
+          background: url("../img/main-page/discover-block/Vector 16.png") no-repeat center/cover;
+          top: -50px;
+          width: 610px;
+          height: 180px;
+     }
+
+     &__btn {
+          position: relative;
+          z-index: 1;
+          padding: 12px 34px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: calc(14 / 20) + em;
+          border-radius: 16px;
+          border: #3162FF 2px solid;
+          color: #3162FF;
+          transition: all 0.3s ease 0s;
+
+          &_active {
+               background-color: #3162FF;
+               color: #fff;
+          }
+
+          &:not(:last-child) {
+               margin-right: 14px;
+          }
+
+          @media (min-width: 750px) {
+               &:hover {
+                    transform: scale(1.1)
+               }
+          }
+
+     }
+}
+
+//==================================================================================
+.nftS-tranding {
+
+     &__row-head {
+          margin: 36px 0 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     &__title {}
+
+     &__view-all {}
+
+     &__paginations-list {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     &__item {
+          position: relative;
+          padding: 12px 20px 12px 52px;
+          background-color: #fff;
+          box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+          border-radius: 29px;
+          color: #070721;
+          line-height: calc(14 / 20) + em;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+
+          @media (min-width: 750px) {
+               &:hover {
+                    transform: scale(1.1);
+               }
+          }
+
+          &::before {
+               content: "";
+               display: inline-block;
+               width: 20px;
+               height: 20px;
+               position: absolute;
+               left: 20px;
+               top: 50%;
+               transform: translateY(-50%);
+          }
+
+          &_1 {
+               &::before {
+                    background: url("../img/main-page/nft-block/Fire.svg") no-repeat center/cover;
+               }
+          }
+
+          &_2 {
+               &::before {
+                    background: url("../img/main-page/nft-block/art.svg") no-repeat center/cover;
+               }
+          }
+
+          &_3 {
+               &::before {
+                    background: url("../img/main-page/nft-block/Video Game.svg") no-repeat center/cover;
+               }
+          }
+
+          &_4 {
+               &::before {
+                    background: url("../img/main-page/nft-block/art.svg") no-repeat center/cover;
+               }
+          }
+
+          &_5 {
+               &::before {
+                    background: url("../img/main-page/nft-block/Guitar.svg") no-repeat center/cover;
+               }
+          }
+
+          &_6 {
+               &::before {
+                    background: url("../img/main-page/nft-block/Camera.svg") no-repeat center/cover;
+               }
+          }
+     }
+
+     &__carts-row {
+          margin-top: 40px;
+     }
+}
+
+//==================================================================================
+.carts-block {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     text-align: center;
+
+     &__cart {
+          position: relative;
+          width: 260px;
+
+          &_1 {}
+
+          &_2 {}
+
+          &_3 {}
+     }
+
+     &__top-part {
+          position: relative;
+          z-index: 2;
+          width: 90%;
+          height: 166px;
+          margin: 0 auto;
+          background-color: greenyellow;
+          border-radius: 20px;
+
+          &_1 {
+               background: url("../img/main-page/users-carts-block/Rectangle 154.png") no-repeat center/cover;
+          }
+
+          &_2 {
+               background: url("../img/main-page/users-carts-block/Rectangle 154-2.png") no-repeat center/cover;
+          }
+
+          &_3 {
+               background: url("../img/main-page/users-carts-block/Rectangle 154-1.png") no-repeat center/cover;
+          }
+     }
+
+     &__cripto-amount {
+          padding: 8px 12px 8px 30px;
+          position: absolute;
+          right: 12px;
+          bottom: 12px;
+          border: 1px solid #3262FD;
+          background-color: #fff;
+          border-radius: 20px;
+
+          i {
+               font-style: normal;
+               color: #8E8C99;
+          }
+
+          &::before {
+               content: "";
+               display: inline-block;
+               position: absolute;
+               left: 12px;
+               top: 50%;
+               transform: translateY(-50%);
+               width: 12px;
+               height: 18px;
+               background: url("../img/main-page/users-carts-block/Group 7665.png") no-repeat center/cover;
+          }
+     }
+
+     &__bottom-floor {
+          position: absolute;
+          width: 100%;
+          padding: 94px 20px 20px;
+          transform: translateY(-50%);
+          background-color: #fff;
+          box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+          border-radius: 20px;
+          text-align: left;
+     }
+
+     &__person-name {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+     }
+
+     &__person-subname {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #8E8C99;
+     }
+
+     &__personal-img {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          width: 28px;
+          height: 28px;
+
+          &_1 {
+               background: url("../img/main-page/users-carts-block/prsn_1.png") no-repeat center/cover;
+          }
+
+          &_2 {
+               background: url("../img/main-page/users-carts-block/prsn_2.png") no-repeat center/cover;
+          }
+
+          &_3 {
+               background: url("../img/main-page/users-carts-block/prsn_3.png") no-repeat center/cover;
+          }
+     }
+}
+
+//==================================================================================
+.top-creators {
+     margin-top: 120px;
+
+     &__carts-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 25px;
+     }
+}
+
+.autors-block {
+
+     &__cart {}
+}
+
+.autor {
+     padding: 20px;
+     flex: 1 1 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #fff;
+     box-shadow: 5px 6px 19px rgba(62, 72, 118, 0.04);
+     border-radius: 20px;
+
+     &__contacts {}
+
+     &__info-block {
+          display: inline-flex;
+          align-items: center;
+          justify-content: start;
+          gap: 12px;
+     }
+
+     &__image {}
+
+     &__name {
+          @extend .carts-block__person-name
+     }
+
+     &__email {
+          @extend .carts-block__person-subname
+     }
+
+     &__btn {
+          position: relative;
+          padding-left: 57px;
+
+          &::before {
+               content: "";
+               display: inline-block;
+               position: absolute;
+               left: 27px;
+               top: 50%;
+               transform: translateY(-50%);
+               width: 20px;
+               height: 20px;
+               background: url("../img/main-page/top-creators-block/Add-User-Copy.svg") center/cover no-repeat;
+          }
+     }
+
+     p {
+          display: block;
+     }
+}
